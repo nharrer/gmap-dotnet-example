@@ -26,7 +26,7 @@
     <div id="map"></div>
     <script>
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
+            var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 4,
                 center: { lat: 48.2081743, lng: 16.37381890000006 }
             });
@@ -34,13 +34,13 @@
             var marker = new google.maps.Marker({
                 position: { lat: 48.2081743, lng: 16.37381890000006 },
                 map: map,
-                title: 'Mark1!'
+                title: 'Mark 1'
             });
 
             var marker2 = new google.maps.Marker({
                 position: { lat: 50.2081743, lng: 12.37381890000006 },
                 map: map,
-                title: 'Mark1!'
+                title: 'Mark 2'
             });
         }
     </script>
